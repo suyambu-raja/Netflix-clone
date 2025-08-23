@@ -1,0 +1,261 @@
+@media (max-width: 0) {
+  .responsive-colors {
+    background: red;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-colors {
+    background: green;
+  }
+}
+@media (max-width: 720px) {
+  .responsive-colors {
+    background: rgb(85, 85, 134);
+  }
+}
+@media (max-width: 960px) {
+  .responsive-colors {
+    background: orange;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-colors {
+    background: blue;
+  }
+}
+
+.poster-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.poster-container .hero-banner {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .poster-container .hero-banner {
+    width: 105%;
+  }
+}
+@media (max-width: 960px) {
+  .poster-container .hero-banner {
+    width: 150%;
+  }
+}
+@media (max-width: 720px) {
+  .poster-container .hero-banner {
+    width: 165%;
+  }
+}
+@media (max-width: 480px) {
+  .poster-container .hero-banner {
+    width: 175%;
+  }
+}
+.poster-container .poster-informations {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 2rem;
+  margin-left: 0.2rem;
+}
+@media (max-width: 1200px) {
+  .poster-container .poster-informations {
+    width: 53%;
+  }
+}
+@media (max-width: 960px) {
+  .poster-container .poster-informations {
+    width: 57%;
+  }
+}
+@media (max-width: 720px) {
+  .poster-container .poster-informations {
+    width: 62%;
+  }
+}
+.poster-container .poster-informations .hero-title {
+  width: 60%;
+  height: 50%;
+}
+@media (max-width: 960px) {
+  .poster-container .poster-informations .hero-title {
+    width: 90%;
+  }
+}
+@media (max-width: 720px) {
+  .poster-container .poster-informations .hero-title {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .poster-container .poster-informations .hero-title {
+    width: 90%;
+    height: 40%;
+  }
+}
+.poster-container .poster-informations p {
+  width: 90%;
+  font-size: 0.9rem;
+}
+@media (max-width: 1200px) {
+  .poster-container .poster-informations p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 960px) {
+  .poster-container .poster-informations p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 720px) {
+  .poster-container .poster-informations p {
+    font-size: 0.6rem;
+  }
+}
+.poster-container .poster-informations .btns-info-container {
+  display: flex;
+  width: 50%;
+  gap: 0.8rem;
+  margin-top: -1rem;
+}
+.poster-container .poster-informations .btns-info-container .play-btn {
+  background: white;
+  width: 29%;
+  height: 6vh;
+  color: black;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+  border: none;
+}
+@media (max-width: 1200px) {
+  .poster-container .poster-informations .btns-info-container .play-btn {
+    height: 5vh;
+    width: 40%;
+  }
+}
+@media (max-width: 960px) {
+  .poster-container .poster-informations .btns-info-container .play-btn {
+    height: 4vh;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .poster-container .poster-informations .btns-info-container .play-btn {
+    height: 3vh;
+    font-size: 0.7rem;
+  }
+}
+.poster-container .poster-informations .btns-info-container .more-info {
+  width: 40%;
+  height: 6vh;
+  border-radius: 0.2rem;
+  background: rgba(70, 68, 68, 0.349);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+@media (max-width: 1200px) {
+  .poster-container .poster-informations .btns-info-container .more-info {
+    height: 5vh;
+  }
+}
+@media (max-width: 960px) {
+  .poster-container .poster-informations .btns-info-container .more-info {
+    width: 55%;
+    height: 4.5vh;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .poster-container .poster-informations .btns-info-container .more-info {
+    height: 3.5vh;
+    font-size: 0.7rem;
+  }
+}
+.poster-container .poster-informations .btns-info-container .more-info img {
+  width: 20%;
+  opacity: 1;
+}
+.poster-container .poster-informations .btns-info-container .more-info span {
+  color: white;
+}
+
+.signOut-btn- {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: black solid 2px;
+  width: 99%;
+}
+@media (max-width: 1200px) {
+  .signOut-btn- {
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .signOut-btn- {
+    width: 145%;
+  }
+}
+@media (max-width: 720px) {
+  .signOut-btn- {
+    width: 155%;
+  }
+}
+@media (max-width: 480px) {
+  .signOut-btn- {
+    width: 165%;
+  }
+}
+.signOut-btn- p {
+  background: rgba(1, 0, 0, 0.418);
+  width: 8rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin-top: -82rem;
+  color: white;
+  z-index: 2000;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+.signOut-btn- p:hover {
+  background: rgba(0, 0, 0, 0.582);
+  text-decoration: underline;
+}
+@media (max-width: 1200px) {
+  .signOut-btn- p {
+    margin-top: -93rem;
+  }
+}
+@media (max-width: 720px) {
+  .signOut-btn- p {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.6rem;
+  }
+}
+
+.signOut-btn-change-btn {
+  display: none;
+}
+
+.style-link {
+  text-decoration: none;
+  color: white;
+}

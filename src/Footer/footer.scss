@@ -1,0 +1,46 @@
+@import '../breakpoints.scss';
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 30vh;
+    margin-left: 20rem;
+    row-gap:2rem;
+    margin-bottom:5rem;
+
+    @include md{
+        width:80%;
+        margin-left:15rem;
+    }
+
+    @include sm{
+        width:100%;
+        margin-left:10rem;
+    }
+
+    .socialmedia-container {
+        display: flex;
+        gap: 1rem;
+
+        .social-icons{
+            font-size:1.7rem;
+        }
+    }
+
+    .footer-components-names {
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        list-style-type: none;
+        column-gap: 3rem;
+        row-gap:1rem;
+        
+        li {
+            font-size:1.1rem;
+            font-weight:500;
+            flex-grow:3 ;
+            width:20%;
+        }
+    }
+}

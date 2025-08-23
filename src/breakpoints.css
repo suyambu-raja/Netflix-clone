@@ -1,0 +1,25 @@
+@media (max-width: 0) {
+  .responsive-colors {
+    background: red;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-colors {
+    background: green;
+  }
+}
+@media (max-width: 720px) {
+  .responsive-colors {
+    background: rgb(85, 85, 134);
+  }
+}
+@media (max-width: 960px) {
+  .responsive-colors {
+    background: orange;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-colors {
+    background: blue;
+  }
+}

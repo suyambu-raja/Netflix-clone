@@ -1,0 +1,141 @@
+@media (max-width: 0) {
+  .responsive-colors {
+    background: red;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-colors {
+    background: green;
+  }
+}
+@media (max-width: 720px) {
+  .responsive-colors {
+    background: rgb(85, 85, 134);
+  }
+}
+@media (max-width: 960px) {
+  .responsive-colors {
+    background: orange;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-colors {
+    background: blue;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+.navbar-container .navbar {
+  display: flex;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-container .navbar .navbar-logo {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 2rem;
+}
+.navbar-container .navbar .navbar-logo .netflix-logo {
+  width: 9rem;
+}
+.navbar-container .navbar .navbar-components-list {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  margin-left: -14rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+@media (max-width: 1200px) {
+  .navbar-container .navbar .navbar-components-list {
+    display: none;
+  }
+}
+.navbar-container .navbar .navbar-components-list div {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-container .navbar .navbar-components-list div:hover {
+  color: #e50914;
+  transform: scale(1.1);
+}
+.navbar-container .navbar .navbar-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  align-items: center;
+  margin-right: 2rem;
+}
+@media (max-width: 1200px) {
+  .navbar-container .navbar .navbar-icons {
+    width: 30%;
+  }
+}
+@media (max-width: 960px) {
+  .navbar-container .navbar .navbar-icons {
+    width: 30%;
+  }
+}
+@media (max-width: 720px) {
+  .navbar-container .navbar .navbar-icons {
+    width: 35%;
+  }
+}
+.navbar-container .navbar .navbar-icons .search-icon {
+  width: 1.5rem;
+}
+@media (max-width: 720px) {
+  .navbar-container .navbar .navbar-icons .search-icon {
+    width: 1.2rem;
+  }
+}
+.navbar-container .navbar .navbar-icons .navbar-user-name {
+  font-size: 1.2rem;
+}
+@media (max-width: 720px) {
+  .navbar-container .navbar .navbar-icons .navbar-user-name {
+    font-size: 1rem;
+  }
+}
+.navbar-container .navbar .navbar-icons .bell-icon-img {
+  width: 1.5rem;
+}
+@media (max-width: 720px) {
+  .navbar-container .navbar .navbar-icons .bell-icon-img {
+    width: 1.2rem;
+  }
+}
+.navbar-container .navbar .navbar-icons .navbar-profile {
+  display: flex;
+  align-items: center;
+}
+.navbar-container .navbar .navbar-icons .navbar-profile .profile-image {
+  width: 2rem;
+}
+@media (max-width: 720px) {
+  .navbar-container .navbar .navbar-icons .navbar-profile .profile-image {
+    width: 1.6rem;
+  }
+}
+.navbar-container .navbar .navbar-icons .navbar-profile .down-arrow-icon {
+  margin: 3rem 1rem;
+}

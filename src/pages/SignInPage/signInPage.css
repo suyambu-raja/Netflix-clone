@@ -1,0 +1,143 @@
+@media (max-width: 0) {
+  .responsive-colors {
+    background: red;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-colors {
+    background: green;
+  }
+}
+@media (max-width: 720px) {
+  .responsive-colors {
+    background: rgb(85, 85, 134);
+  }
+}
+@media (max-width: 960px) {
+  .responsive-colors {
+    background: orange;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-colors {
+    background: blue;
+  }
+}
+
+.login-page-main-container {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.login-page-main-container .netflix-logo {
+  position: fixed;
+  width: 150px;
+  margin: 1rem 4rem;
+  /*  @include lg {
+       width:6rem;
+       height:3rem;
+   } */
+}
+.login-page-main-container .signIn-container {
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  margin: 9% 37%;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  border-radius: 0.4rem;
+  padding: 4rem 3rem 4rem 3rem;
+}
+@media (max-width: 960px) {
+  .login-page-main-container .signIn-container {
+    padding: 6%;
+    width: 32%;
+    margin: 12% 33%;
+  }
+}
+@media (max-width: 720px) {
+  .login-page-main-container .signIn-container {
+    padding: 8%;
+    width: 43%;
+    margin: 18% 23%;
+  }
+}
+@media (max-width: 480px) {
+  .login-page-main-container .signIn-container {
+    padding: 10%;
+    width: 65%;
+    margin: 32% 10%;
+  }
+}
+.login-page-main-container .signIn-container .headline-for-signIn {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2.8rem;
+}
+.login-page-main-container .signIn-container .input-container-for-signIn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 100%;
+  height: 250px;
+  align-items: center;
+}
+.login-page-main-container .signIn-container .input-container-for-signIn input {
+  width: 95%;
+  height: 6vh;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+  background: #333;
+  border: none;
+  color: white;
+}
+.login-page-main-container .signIn-container .input-container-for-signIn input::-moz-placeholder {
+  color: #e5d9d9;
+}
+.login-page-main-container .signIn-container .input-container-for-signIn input::placeholder {
+  color: #e5d9d9;
+}
+.login-page-main-container .signIn-container .input-container-for-signIn .signIn-btn {
+  background: rgb(255, 0, 0);
+  color: white;
+  width: 100%;
+  height: 7vh;
+  border-radius: 0.3rem;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.2rem;
+  gap: 3rem;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .need-help-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .need-help-container .checkbox-container {
+  display: flex;
+  font-size: 0.9rem;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .need-help-container span {
+  font-size: 0.8rem;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .signUp-option {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .signUp-option span {
+  font-size: 0.8rem;
+}
+.login-page-main-container .signIn-container .footer-section-for-signIn .signUp-option div {
+  font-size: 0.9rem;
+}
+.login-page-main-container .signUp-container .input-container-for-signIn {
+  height: 350px;
+}

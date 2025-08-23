@@ -1,0 +1,49 @@
+@import '../../breakpoints.scss';
+
+.popular-on-netflix-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    row-gap: 4rem;
+    position: absolute;
+    top: 79%;
+    margin-top: 1rem;
+
+    @include lg {
+        width: 150vw;
+    }
+
+    @include md{
+        width:165vw;
+    }
+    
+    @include sm{
+        width:175vw;
+    }
+}
+
+.more-slide-cards-container {
+    display: flex;
+    flex-direction: column;
+    height: 260vh;
+    width: 100%;
+    row-gap: 4rem;
+    margin-top: 13rem;
+    padding: 1rem;
+
+
+    @include lg {
+        width: 150vw;
+    }
+
+    
+    @include md{
+        width:160vw;
+    }
+
+    
+    @include sm{
+        width:170vw;
+    }
+}

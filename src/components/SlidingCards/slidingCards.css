@@ -1,0 +1,77 @@
+@media (max-width: 0) {
+  .responsive-colors {
+    background: red;
+  }
+}
+@media (max-width: 480px) {
+  .responsive-colors {
+    background: green;
+  }
+}
+@media (max-width: 720px) {
+  .responsive-colors {
+    background: rgb(85, 85, 134);
+  }
+}
+@media (max-width: 960px) {
+  .responsive-colors {
+    background: orange;
+  }
+}
+@media (max-width: 1200px) {
+  .responsive-colors {
+    background: blue;
+  }
+}
+
+.popular-on-netflix-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  row-gap: 4rem;
+  position: absolute;
+  top: 79%;
+  margin-top: 1rem;
+}
+@media (max-width: 960px) {
+  .popular-on-netflix-cards {
+    width: 150vw;
+  }
+}
+@media (max-width: 720px) {
+  .popular-on-netflix-cards {
+    width: 165vw;
+  }
+}
+@media (max-width: 480px) {
+  .popular-on-netflix-cards {
+    width: 175vw;
+  }
+}
+
+.more-slide-cards-container {
+  display: flex;
+  flex-direction: column;
+  height: 260vh;
+  width: 100%;
+  row-gap: 4rem;
+  margin-top: 13rem;
+  padding: 1rem;
+}
+@media (max-width: 960px) {
+  .more-slide-cards-container {
+    width: 150vw;
+  }
+}
+@media (max-width: 720px) {
+  .more-slide-cards-container {
+    width: 160vw;
+  }
+}
+@media (max-width: 480px) {
+  .more-slide-cards-container {
+    width: 170vw;
+  }
+}
