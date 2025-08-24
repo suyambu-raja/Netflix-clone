@@ -12,6 +12,7 @@ export const DataProvider = ({ children }) => {
     const [signOut, setSignOut] = useState(true)
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false)
+    const [errorMessage, setErrorMessage] = useState(false)
 
     useEffect(() => {
 
@@ -32,7 +33,7 @@ export const DataProvider = ({ children }) => {
             <DataContext.Provider
                 value={{
                     cards, setCards, slidingCards, setSlidingCards,loading, setLoading,
-                    authc, setAuthc, signOut, setSignOut
+                    authc, setAuthc, signOut, setSignOut, errorMessage, setErrorMessage
                 }}
             >{children}</DataContext.Provider>
     )

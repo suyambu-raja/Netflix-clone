@@ -1,12 +1,15 @@
-import {  useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useContext } from 'react'
 import './titleCards.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import DataContext from '../../Context/DataContext'
 
 const TitleCards = ({ title, category, newClass }) => {
   const navigate = useNavigate()
   const TitleCardsRef = useRef(null)
   const [apiData, setApiData] = useState([])
+  const { setErrorMessage, errorMessage, loading, setLoading } = useContext(DataContext)
+
 
   const handleWheel = (e) => {
     e.preventDefault()
@@ -22,17 +25,21 @@ const TitleCards = ({ title, category, newClass }) => {
   useEffect(() => {
     const APIcall = async () => {
       try {
+        setLoading(true)
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${category}?language=en-US&page=1`,
           options)
-       
+        setErrorMessage(false)
         setApiData(response.data.results)
       } catch (error) {
-        console.error("Error fetching data:", error)
+        setErrorMessage(error.message)
+        console.log(errorMessage)
+      } finally{
+        setLoading(false)
       }
-    
     };
-  APIcall() 
+
+    APIcall()
 
     TitleCardsRef.current.addEventListener('wheel', handleWheel)
   }, [])

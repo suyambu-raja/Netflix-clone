@@ -7,8 +7,8 @@ import SignInPage from './pages/SignInPage/SignInPage'
 import { ToastContainer, toast } from 'react-toastify';
 
 
+function App() { 
 
-function App() {
 
   return (
 

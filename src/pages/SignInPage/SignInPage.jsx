@@ -25,7 +25,7 @@ const SignInPage = () => {
           await signup(name, email, password)
         }
         setLoading(false)
-      }, 2000)
+      }, 200)
     }
     catch (error) {
       console.log(error)

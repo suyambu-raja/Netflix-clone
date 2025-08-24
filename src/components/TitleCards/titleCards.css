@@ -1,7 +1,7 @@
 .Title-cards-container {
   display: flex;
   flex-direction: column;
-  row-gap: 0.7rem;
+  row-gap: 1.7rem;
 }
 .Title-cards-container .card-title {
   font-size: 1.3rem;
@@ -24,7 +24,7 @@
   gap: 0.6rem;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 .Title-cards-container .Title-cards .card-container .card-img {
   width: 250px;
@@ -40,7 +40,7 @@
 }
 
 #for-popular {
-  row-gap: 0px;
+  row-gap: 2rem;
 }
 #for-popular .card-title {
   font-size: 1.3rem;
