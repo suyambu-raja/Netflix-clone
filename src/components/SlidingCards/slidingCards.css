@@ -33,7 +33,7 @@
   row-gap: 4rem;
   position: absolute;
   top: 79%;
-  margin-top: 1rem;
+  margin-top: -3rem;
 }
 @media (max-width: 960px) {
   .popular-on-netflix-cards {
@@ -47,7 +47,7 @@
 }
 @media (max-width: 480px) {
   .popular-on-netflix-cards {
-    width: 175vw;
+    width: 180vw;
   }
 }
 

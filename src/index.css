@@ -6,3 +6,76 @@ body{
   
 }
 
+.loading {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.netflix-n {
+  position: relative;
+  width: 20vmin;  
+  height: 32vmin;
+  min-width: 80px;  
+  min-height: 120px;
+}
+
+.n-segment {
+  position: absolute;
+  height: 100%;
+  background-color: #e50914;
+  border-radius: 2px;
+  animation: glow 1s infinite ease-in-out;
+}
+
+
+.left-bar,
+.right-bar {
+  width: 28%; 
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.6);
+}
+
+.left-bar {
+  left: 0;
+  animation-delay: 0s;
+}
+
+.right-bar {
+  right: 0;
+  animation-delay: 0.4s;
+}
+
+
+.diagonal-bar {
+  width: 32%;
+  left: 50%;
+  transform: translateX(-50%) skewX(-20deg);
+  background: linear-gradient(
+    to bottom,
+    #b00612 0%,
+    #e50914 40%,
+    #b00612 100%
+  );
+  z-index: 2;
+  animation-delay: 0.2s;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0px rgba(144, 6, 13, 0);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(229, 9, 20, 0.25),
+                0 0 50px rgba(229, 9, 20, 0.15);
+    opacity: 0.9;
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(82, 4, 8, 0);
+    opacity: 0.6;
+  }
+}

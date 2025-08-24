@@ -40,7 +40,7 @@ const Poster = () => {
                 setSignOut(true)
               }}
         >
-          <p>sign Out of Netflix</p>
+          <p>Sign Out of Netflix</p>
         </div>
       </Link>
     </>

@@ -24,7 +24,7 @@
     }
 
     @include sm {
-      width: 175%;
+      width: 180%;
     }
 
   }
@@ -37,6 +37,7 @@
     height: fit-content;
     gap: 2rem;
     margin-left: 0.2rem;
+    margin-top:-10rem;
 
     @include xl {
       width: 53%;
@@ -48,6 +49,10 @@
 
     @include md {
       width: 62%;
+    }
+
+    @include sm{
+      width:80%;
     }
 
     .hero-title {
@@ -185,7 +190,7 @@
 
   
   @include sm{
-    width: 165%;
+    width: 170%;
   }
 
   p {
@@ -198,7 +203,7 @@
     position: fixed;
     margin-top: -82rem;
     color: white;
-    z-index: 2000;
+    z-index: 3000;
     border-radius: 0.2rem;
     font-size: 0.8rem;
 
@@ -216,6 +221,11 @@
      width:7rem;
      height:2rem;
      font-size:0.6rem;
+  }
+
+  @include sm{
+    margin-top:-83rem;
+    margin-left:-1rem;
   }
 
 

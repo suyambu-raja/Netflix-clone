@@ -3,12 +3,12 @@ import Poster from '../../components/Poster/Poster'
 import SlideCards from '../../components/SlidingCards/SlidingCards'
 import Footer from '../../Footer/Footer'
 
-const HomePage = () => {
+const HomePage = ({setLoading}) => {
   return (
     <main>
       <Navbar />
       <Poster />
-      <SlideCards />
+      <SlideCards setLoading={setLoading} />
       <Footer />
     </main>
   )

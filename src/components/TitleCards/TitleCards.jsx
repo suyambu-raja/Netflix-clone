@@ -1,11 +1,9 @@
-import { useContext, useEffect, useRef, useState } from 'react'
-import DataContext from '../../Context/DataContext'
+import {  useEffect, useRef, useState } from 'react'
 import './titleCards.css'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 const TitleCards = ({ title, category, newClass }) => {
-  const { cards, setCards } = useContext(DataContext)
   const navigate = useNavigate()
   const TitleCardsRef = useRef(null)
   const [apiData, setApiData] = useState([])
@@ -27,14 +25,14 @@ const TitleCards = ({ title, category, newClass }) => {
         const response = await axios.get(
           `https://api.themoviedb.org/3/movie/${category}?language=en-US&page=1`,
           options)
-
+       
         setApiData(response.data.results)
       } catch (error) {
         console.error("Error fetching data:", error)
       }
+    
     };
-    APIcall()
-    setCards(...apiData)
+  APIcall() 
 
     TitleCardsRef.current.addEventListener('wheel', handleWheel)
   }, [])
@@ -50,9 +48,10 @@ const TitleCards = ({ title, category, newClass }) => {
           ref={TitleCardsRef}
         >
           {apiData.length ? (apiData.map((card, index) => (
-            <div className="card-container"  key={index}
+            <div className="card-container" key={index}
               onClick={() => navigate(`/videoPage/${card.id}`)}>
               <img src={`https://image.tmdb.org/t/p/w500${card.poster_path}`} className="card-img" />
+              <div>{card.title}</div>
             </div>
           ))) : (<div className="no-cards">NO Cards</div>)}
         </div>

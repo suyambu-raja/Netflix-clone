@@ -8,7 +8,7 @@
     row-gap: 4rem;
     position: absolute;
     top: 79%;
-    margin-top: 1rem;
+    margin-top: -3rem;
 
     @include lg {
         width: 150vw;
@@ -19,7 +19,7 @@
     }
     
     @include sm{
-        width:175vw;
+        width:180vw;
     }
 }
 

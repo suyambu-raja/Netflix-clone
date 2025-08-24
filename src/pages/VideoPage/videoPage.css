@@ -61,6 +61,12 @@
     height: 3%;
   }
 }
+@media (max-width: 480px) {
+  .video-page-main-container .video-page-container .back-btn {
+    border: white 1px solid;
+    width: 70%;
+  }
+}
 .video-page-main-container .video-page-container .back-btn .back-icon {
   font-size: 1.4rem;
 }
@@ -79,6 +85,12 @@
   border-radius: 0.5rem;
   border: none;
 }
+@media (max-width: 480px) {
+  .video-page-main-container .video-page-container .video-player {
+    margin-top: 2.5rem;
+    margin-left: -1.4rem;
+  }
+}
 .video-page-main-container .video-page-footer {
   width: 91%;
   height: 3%;
@@ -96,5 +108,12 @@
   .video-page-main-container .video-page-footer {
     margin-left: 7.5%;
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 480px) {
+  .video-page-main-container .video-page-footer {
+    font-size: 0.6rem;
+    margin-left: 4%;
+    margin-top: 1rem;
   }
 }

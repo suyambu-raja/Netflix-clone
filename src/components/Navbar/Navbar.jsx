@@ -17,6 +17,7 @@ const Navbar = () => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         navbarRef.current.style.background = "rgb(0,0,0,0.75)"
+        navbarRef.current.style.transition = "0.3s"
       } else {
         navbarRef.current.style.background = "transparent"
       }

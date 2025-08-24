@@ -35,7 +35,6 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: 0.3s ease;
 }
 .navbar-container .navbar {
   display: flex;
@@ -98,6 +97,12 @@
 @media (max-width: 720px) {
   .navbar-container .navbar .navbar-icons {
     width: 35%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-container .navbar .navbar-icons {
+    margin-left: 40%;
+    gap: 1rem;
   }
 }
 .navbar-container .navbar .navbar-icons .search-icon {
