@@ -65,8 +65,8 @@ body{
 
 .diagonal-bar {
   width: 32%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-20deg);
+  right: 50%;
+  transform: translateX(50%) skewX(20deg);
   background: linear-gradient(
     to bottom,
     #b00612 0%,
